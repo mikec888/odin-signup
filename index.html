@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">   
+    <title>SignUp Form</title>
+</head>
+<body>
+    <div class="container">
+        <div class="images">    
+            <img class="hero-image" src="../photo.jpg">
+            <div class="hero-div"></div>
+                <img class="logo" src="../logo.png">
+                <p class="logo-text">ODIN</p>
+        </div>
+        <div class="theform">
+            <h1>In life, sometimes you have to do the stuff that you hate.</h1>
+            <p>Like styling a paragraph, put logo on top of an image, and use the font specified by clients</p>
+            <p>Maybe it will get less boring after.</p>
+            
+            <h1>Let's do this!</h1>
+            <form id="signupForm">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="firstName">First Name</label>
+                        <input type="text" id="firstName" name="firstName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="lastName">Last Name</label>
+                        <input type="text" id="lastName" name="lastName" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phoneNumber">Phone Number</label>
+                        <input type="tel" id="phoneNumber" name="phoneNumber">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="password" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="confirmPassword">Confirm Password</label>
+                        <input type="password" id="confirmPassword" name="confirmPassword" required>
+                        <small class="error-message" id="passwordError">* Passwords do not match</small>
+                    </div>
+                </div>
+                <button type="submit">Create Account</button>
+                <p>Already have an account? <a href="#">Log in</a></p>
+            </form>
+            
+        
+        </div>
+    </div>
+</body>
+</html>
